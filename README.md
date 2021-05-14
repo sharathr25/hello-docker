@@ -35,6 +35,6 @@ apt-get is also there <br />
 apt stands for Advanced Package Tool <br />
 
 `apt list` -> to get available packages that can be installed <br />
-`apt updaete` -> to update package database in your ubuntu machine so that you can install packages, <br />
+`apt update` -> to update package database in your ubuntu machine so that you can install packages, <br />
                If you get 'Unable to locate package package_name' then you can update the database by running the command and you can install the package. <br />
 `apt install package_name` -> to install a package ex: apt install nano <br />

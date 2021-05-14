@@ -24,9 +24,10 @@ docker commands
 `docker run tag_name` -> used to run built or pulled images, NOTE: if an image with tag_name <br />
                        is not there in the local machine then docker will pull this from docker hub <br />
 `docker run -it tag_name` -> used to run built or pulled images with interactive mode <br />
+`docker start -i id_of_image(1st 3 letters)` -> used to run built or pulled images with interactive mode <br />
 `docker ps` -> used to check running containers <br />
 `docker ps -a` -> used to check running and stopped containers <br />
-
+`docker exec -it -u user_name container_id bash` -> used to run bash session in the container, if don't give user name you will login as root<br />
 
 linux
 ------
@@ -48,9 +49,33 @@ apt stands for Advanced Package Tool <br />
 `rm file_1 file_2` -> to remove files<br />
 `rm file*` -> to remove files with pattern matching<br />
 `rm -r directory_name` -> to remove a directory<br />
-`nano file_name` -> to edit files
-`cat file_name` -> to view file content(suits for small files)
-`more file_name` -> to view file content(suits for large files, note - we can only scroll down)
-`less file_name` -> to view file content(suits for large files, note - we can scroll up and down)
-`head -n number_of_lines file_name` -> to see 1st number_of_lines
-`tail -n number_of_lines file_name` -> to see last number_of_lines
+`nano file_name` -> to edit files<br />
+`cat file_name1 file_name1` -> to view file content with concatenation(suits for small files)<br />
+`more file_name` -> to view file content(suits for large files, note - we can only scroll down)<br />
+`less file_name` -> to view file content(suits for large files, note - we can scroll up and down)<br />
+`head -n number_of_lines file_name` -> to see 1st number_of_lines<br />
+`tail -n number_of_lines file_name` -> to see last number_of_lines<br />
+`cat file_name > file_name2` -> redirection and this can be used with other commands as well<br />
+`cat file_name >> file_name2` -> to concate contents and this can be used with other commands as well<br />
+`grep pattern options file_name or directory` -> used to search text in files, if we need to search a direcory we need to give -r as option<br />
+`find directory -type f -name file_name` -> used to case sensitive sesearch a file <br />
+`find directory -type f -iname file_name` -> used to case insensitive sesearch a file <br />
+`find directory -type d file_name` -> used to get all the directories in the specified directory <br />
+`command_1;command_2;....command_n` -> used to execute multiple commands in one go<br />
+`command_1 && command_2 && ....command_n` -> used to execute multiple commands in one go untill one fails<br />
+`command_1 || command_2` -> used to execute eiether one of the command<br />
+`command_1 | command_2` -> pipe the o/p of command_1 to command_2
+`printenv` -. used to see env variables
+`printenv env_var_name` -> used to see a perticuler env variable
+`echo $env_var_name` ->used to see a perticuler env variable
+`export env_name=value` ->used to set a env variable, ex: export A=a
+`ps` -> to see list of processes
+`kill pid` -> used to kill a process with pid
+`useradd` -> used to add users
+`adduser` -> used to add users in an interactive mode
+`usermod` -> used to modify users
+`userdel` -> used to delete users
+`groupadd` -> used to add groups 
+`groupmod` -> used to modify groups
+`groupdel` -> used to delete groups
+`chmod` -> used to change permissions of a file

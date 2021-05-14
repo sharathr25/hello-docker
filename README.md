@@ -38,3 +38,19 @@ apt stands for Advanced Package Tool <br />
 `apt update` -> to update package database in your ubuntu machine so that you can install packages, <br />
                If you get 'Unable to locate package package_name' then you can update the database by running the command and you can install the package. <br />
 `apt install package_name` -> to install a package ex: apt install nano <br />
+`touch file_name_1 file_name_2` -> used to create files <br />
+`cd path` -> used to get into a folder <br />
+`mkdir dirctory_name` -> used to create a directory<br />
+`ls` -> used to list files<br />
+`ls -number` -> used to list with specified number of files in a line ex: ls -1<br />
+`ls -l` -> long listing of files<br />
+`mv source_file destination` -> used to move files(rename as well)<br />
+`rm file_1 file_2` -> to remove files<br />
+`rm file*` -> to remove files with pattern matching<br />
+`rm -r directory_name` -> to remove a directory<br />
+`nano file_name` -> to edit files
+`cat file_name` -> to view file content(suits for small files)
+`more file_name` -> to view file content(suits for large files, note - we can only scroll down)
+`less file_name` -> to view file content(suits for large files, note - we can scroll up and down)
+`head -n number_of_lines file_name` -> to see 1st number_of_lines
+`tail -n number_of_lines file_name` -> to see last number_of_lines
